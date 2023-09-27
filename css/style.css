@@ -1,14 +1,32 @@
+/*  Hoja de Estilos Proyecto CAC Phyton  */
+:root {
+/*     
+
+       Colores Globales 
+
+Cambié esta parte del código para unificar la definición de los colores en un solo lugar.
+JE 20230927-1115
+
+*/
+  --fondo-std: rgba(116, 211, 114, 1.0);
+  --fondo-menu: rgba(64, 128, 63, 1.0);
+  --frente-std: white;
+}
+
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Sans-Serif;
 }
 
 footer {
     text-align: center;
-    background-color: rgb(116, 211, 114);
+    background-color: var(--fondo-std);
     border-radius: 5px;
 }
 header {
-    background-color: rgb(116, 211, 114);
+    background-color: var(--fondo-menu);
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -19,7 +37,7 @@ h1, .imagen {
 }
 
 .nav {
-    background-color: rgb(64, 128, 63);
+    background-color: var(--fondo-std);
     color: white;
     text-decoration: none;
     padding: 3px;
@@ -36,7 +54,7 @@ h1, .imagen {
 }
 
 .grid-item {
-    background-color: rgb(64, 128, 63);
+    background-color: var(--fondo-menu);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -47,7 +65,7 @@ h1, .imagen {
 }
 
 .grid-item-imag {
-    background-color: rgb(64, 128, 63);
+    background-color: var(--fondo-menu);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -55,4 +73,30 @@ h1, .imagen {
     border-radius: 100px;
     margin: 5px 200px 5px 200px;
     justify-content: space-evenly;
+}
+
+/* Estilos usados en las páginas de detalle de productos:
+
+    producto-001.html  Termotanques solares
+    
+*/
+
+.h2-producto {
+  color:white;
+  background-color: var(--fondo-menu);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.img-producto, .tbl-producto {
+  width: 50%;
+  display: block;
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tbl-producto {
+  width: 95%;
 }
