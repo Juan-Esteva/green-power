@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
 </head>
 <body>
     <header>
@@ -19,11 +23,78 @@
         <h1> Servicio de paneles solares</h1>
 
     </header>
-    <footer>
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+           
+            <h3>CONTACTENOS: </h3>
+
+            <div class="container">
+               
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
+                </form>
+                <div id="respuesta"></div>
+            </div>
+            
+
+            
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto">222-2233445</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contacto">correo@correo.com.ar </span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-globe"></i> Página Web
+                    </h2>
+                    <span class="info-contacto">www.greenpower.com </span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-brands fa-whatsapp"></i> whatsapp
+                    </h2>
+                    <span class="info-contacto">222-2233445</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Mapa de google-->
+
+   
+
+
+
+
+    <!--<footer>
         <p>mail de Contacto</p>
         <p>teléfono de contacto</p>
         <p>iconos de redes sociales</p>
         <p>ubicacion</p>
-    </footer>
+    </footer-->
 </body>
 </html>
