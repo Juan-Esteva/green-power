@@ -21,9 +21,16 @@ JE 20230927-1115
 }
 
 footer {
+  
+    
     text-align: center;
     background-color: var(--fondo-std);
     border-radius: 5px;
+}
+
+footer .fila{
+  display: flex;
+    justify-content: space-around;
 }
 header {
     background-color: var(--fondo-menu);
@@ -133,3 +140,77 @@ p.iconos-leyenda {
   margin-right: auto;
   text-align: center;
 }
+
+
+
+/*Formulario de contactos
+registros.html*/
+
+.contacto{
+   
+  background-color: #202020;
+  padding: 140px 0 100px 0;
+  color: #e6e6e6;
+  text-align: center;
+}
+.contacto .contenido-seccion{
+
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+  display: flex;
+  justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+  margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+  color: #40803F;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #202020;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
