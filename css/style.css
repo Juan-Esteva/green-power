@@ -25,6 +25,7 @@ footer {
     font-size: 12px;
     background-color: var(--fondo-std);
     border-radius: 5px;
+    width: 100%;
 }
 
 footer, .fila{
@@ -81,7 +82,7 @@ h1, .imagen {
 .col-12-txt {
   width: 100%;
   color: rgb(14, 13, 13);
-  text-align: left;
+  text-align: justify;
   text-decoration: none;
   font-size: 15px;
   padding: 3px;
@@ -90,6 +91,7 @@ h1, .imagen {
   justify-content: space-evenly;
 }
 
+/* MENU DESPLEGABLE  */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -123,6 +125,20 @@ h1, .imagen {
   background-color: #5b605b;
 }
 
+/* ESTILO PREGUNTAS FRECUENTES */
+.faq {
+  color: var(--fondo-menu);
+  font-size: 15px;
+}
+
+.rta {
+  font-size: 13.5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
 /* Estilos usados en las páginas de detalle de productos:
 
     producto-001.html  Termotanques solares
