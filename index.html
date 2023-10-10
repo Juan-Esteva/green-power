@@ -11,68 +11,95 @@
 <body>
     <header>
         <nav>
-            <!-- agregar icono de la inicial de la empresa (podría ser el mismo que esté en el head) -->
-            <a class="nav" href="index.html">Inicio</a>
+            <a class="nav" href="index.html">Inicio</a> 
             <a class="nav" href="pages/quienes_somos.html">Quienes somos</a>
-            <a class="nav" href="pages/productos-002.html">Nuestros productos</a>
+            <div class="dropdown">
+                <div class="nav" class="dropbtn" >Nuestros Productos</div>
+                <div class="dropdown-content">
+                    <a class="nav" href="pages/productos-002.html">Termotanques solares</a>
+                    <a class="nav" href="pages/productos-002.html">Electricidad fotovoltaica</a>
+                </div>
+            </div>    
             <a class="nav" href="pages/blog_noticias.html">Blog de noticias</a>
-            <a class="nav" href="pages/registro.html">Contacto</a>
+            <a class="nav" href="pages/registro.html">Contacto</a>            
         </nav>
-        <h1> Servicio de paneles solares</h1>
+        <h1>Green-Power</h1>
     </header>
 
-    <!-- revisar tema desbordamiento de los iconos del grid -->
-    <div class="grid-container">
-        <div class="grid-item-imag"><img src="img/quienes-somos.png" height="80px" width="80px" alt=""></div>
-        <div class="grid-item-imag"><img src="img/productos.png" height="80px" width="80px" alt=""></div>
-        <div class="grid-item">Quienes somos</div>
-        <div class="grid-item">Nuestros productos</div>
-        <div class="grid-item-imag"><img src="img/noticias.png" height="80px" width="80px" alt=""></div>
-        <div class="grid-item-imag"><img src="img/registro.png" height="80px" width="80px" alt=""></div>
-        <div class="grid-item">Blog de noticias</div>
-        <div class="grid-item">Formulario de contacto</div>
+    <br><h2>Servicio de paneles solares</h2>
+    <br><div class="grid-container">
+        <div class="col-12-txt" ><p>Green-Power nace con metas claras, fomentar el uso de recursos renovables y transformar la manera de producir la energía que consumimos. Mediante procesos amigables con el medio ambiente, y con los usuarios, utilizamos las tecnologías disponibles. Especializándonos en energía solar: térmica y fotovoltaica.</p>
+        <br><p>Nuestro desafío cotidiano, es el mejoramiento socio-ambiental.</p></div>
+        <!-- <div class="col-12-img"><img src="img/panell.jpg" height="200px" width="250px" alt=""></div>  -->
     </div>
 
+    <div class="grid-container">
+        <div class="col-12-img"><img src="img/quienes-somos.png" height="80px" width="80px" alt=""></div>
+        <div class="col-12-img"><img src="img/productos.png" height="80px" width="80px" alt=""></div>
+        <div class="col-12"><a href="pages/quienes_somos.html">Quienes somos</a></div>
 
+        <div class="col-12 dropdown">Nuestros productos
+            <div class="dropdown-content">
+                <a class="nav" href="pages/productos-002.html">Termotanques solares</a>
+                <a class="nav" href="pages/productos-002.html">Electricidad fotovoltaica</a>
+            </div>    
+        </div>
+        
+        <div class="col-12-img"><img src="img/noticias.png" height="80px" width="80px" alt=""></div>
+        <div class="col-12-img"><img src="img/registro.png" height="80px" width="80px" alt=""></div>
+        <div class="col-12"><a href="pages/blog_noticias.html">Blog de noticias</a></div>
+        <div class="col-12"><a href="pages/registro.html">Formulario de contacto</a></div>
+    </div>
 
+    <br><br><h2>Preguntas frecuentes</h2><br>
+    <details>
+        <summary class="faq">¿Qué debo saber antes de comprar un producto?</summary>
+        <br><p class="rta">Para poder comprar kits solares desde internet, te recomendamos que leas la información que te brindamos, ya que con tanta oferta y competitividad entre tiendas on-line, en vez de favorecer al consumidor, la tendencia es abaratar costos. Por eso, antes de decidir sobre que kit solar comprar, necesitas tener más información. Podes ver toda la información en la sección "Productos".</p><br>
+    </details>
+    <details>
+        <summary class="faq">¿Cuántos paneles solares se necesitan para una casa pequeña?</summary>
+        <br><p class="rta">Esto dependerá de varios factores: el consumo anual de la vivienda, el tipo de panel solar elegido, la potencia del mismo, la orientación del tejado y la situación geográfica. Para más información, contáctenos por cualquiera de nuestros canales de atención.</p><br>
+    </details>
+    <details>
+        <summary class="faq">¿Ofrecen servicio de mantenimiento de los equipos?</summary>
+        <br><p class="rta">¡Si! Al momento de la instalación, le dejamos un contacto personalizado para mantenimientos en el futuro.</p><br>
+    </details>
+    <details>
+        <summary class="faq">¿Cuánto tiempo tengo de garantía?</summary>
+        <br><p class="rta">Cualquiera de nuestros productos cuenta con 1 año de garantía.</p><br>
+    </details>
+    <details>
+        <summary class="faq">¿Qué medios de pago ofrecen?</summary>
+        <br><p class="rta">Aceptamos todos los medios de pago. Para más información, envíe su consulta a través de cualquier medio de contacto que lo responderemos a la brevedad.</p><br>
+    </details>
 
-
-    <footer>
+    <br><footer>
         <div class="fila">
-            <div class="col">
-                <h2>
+            <div>
+                <p>
                     <i class="fa-solid fa-phone"></i> Teléfono
-                </h2>
+                </p>
                 <span class="info-contacto">222-2233445</span>
             </div>
-            <div class="col">
-                <h2>
+            <div>
+                <p>
                     <i class="fa-solid fa-envelope"></i> Correo
-                </h2>
+                </p>
                 <span class="info-contacto">correo@correo.com.ar </span>
             </div>
-            <div class="col">
-                <h2>
+            <div>
+                <p>
                     <i class="fa-solid fa-globe"></i> Página Web
-                </h2>
+                </p>
                 <span class="info-contacto">www.greenpower.com </span>
             </div>
-            <div class="col">
-                <h2>
+            <div>
+                <p>
                     <i class="fa-brands fa-whatsapp"></i> whatsapp
-                </h2>
+                </p>
                 <span class="info-contacto">222-2233445</span>
             </div>
         </div>
-    </div>
-
-
-
-
-        <!--<p>mail de Contacto</p>
-        <p>teléfono de contacto</p>
-        <p>iconos de redes sociales</p>
-        <p>ubicacion</p>-->
     </footer>
 </body>
 </html>
