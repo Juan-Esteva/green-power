@@ -273,59 +273,6 @@ button[type="submit"]:hover {
 
 /* Estilos usados en Blog de noticias*/
 
-*{
-  --fondo-std: rgba(116, 211, 114, 1.0);
-  --fondo-menu: rgba(64, 128, 63, 1.0);
-  --frente-std: white;
-}
-
-* {
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: Roboto, Sans-Serif;
-}
-
-footer {
-    text-align: center;
-    font-size: 12px;
-    background-color: var(--fondo-std);
-    border-radius: 5px;
-    width: 100%;
-}
-
-footer, .fila{
-  display: flex;
-  justify-content: space-around;
-}
-
-header {
-    background-color: var(--fondo-menu);
-    padding: 7px;
-    border-radius: 5px;
-    margin: 10px 0 10px 0;
-}
-
-.nav {
-    background-color: var(--fondo-std);
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-body {
-    position:relative;
-    margin: 0;
-    position: relative;
-    background-color: rgba(116, 211, 114, 1.0);
-    background-repeat: no-repeat;
-    background-position: center center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-}
 
 h3{
     color: #fa6446;
@@ -338,6 +285,7 @@ a{
 
 .containerNoticias{
     padding: 0 25px 25px 25px;
+    background-color: #202020;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
