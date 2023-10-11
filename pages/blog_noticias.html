@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de noticias</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green-Power</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<header>
+    <nav>
+        <a class="nav" href="index.html">Inicio</a> 
+        <a class="nav" href="pages/quienes_somos.html">Quienes somos</a>
+        <div class="dropdown">
+            <div class="nav" class="dropbtn" >Nuestros Productos</div>
+            <div class="dropdown-content">
+                <a class="nav" href="pages/productos-002.html">Termotanques solares</a>
+                <a class="nav" href="pages/productos-002.html">Electricidad fotovoltaica</a>
+            </div>
+        </div>    
+        <a class="nav" href="pages/blog_noticias.html">Blog de noticias</a>
+        <a class="nav" href="pages/registro.html">Contacto</a>            
+    </nav>
+    <h1>Blog Noticias</h1>
+</header>
+
 <body>
-    <header>
-        <nav>
-            <a class="nav" href="../index.html">Inicio</a> 
-            <a class="nav" href="quienes_somos.html">Quienes somos</a>
-            <div class="dropdown">
-                <div class="nav" class="dropbtn" >Nuestros Productos</div>
-                <div class="dropdown-content">
-                    <a class="nav" href="productos-002.html">Nuestros productos 1</a>
-                    <a class="nav" href="productos-002.html">Nuestros productos 2</a>
-                </div>
-            </div>    
-            <a class="nav" href="blog_noticias.html">Blog de noticias</a>
-            <a class="nav" href="registro.html">Contacto</a>            
-        </nav>
-        <h1>Green-Power</h1>
-    </header>
-    <footer>
-        <div class="fila">
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-phone"></i> Teléfono
-                </h2>
-                <span class="info-contacto">222-2233445</span>
-            </div>
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-envelope"></i> Correo
-                </h2>
-                <span class="info-contacto">correo@correo.com.ar </span>
-            </div>
-            <div class="col">
-                <h2>
-                    <i class="fa-solid fa-globe"></i> Página Web
-                </h2>
-                <span class="info-contacto">www.greenpower.com </span>
-            </div>
-            <div class="col">
-                <h2>
-                    <i class="fa-brands fa-whatsapp"></i> whatsapp
-                </h2>
-                <span class="info-contacto">222-2233445</span>
-            </div>
+    <div id="containerNoticias" class="containerNoticias">
+        <div class="noticia">
+            <h3>Energía Renovables: se sumaron más de 173 MW al sistema eléctrico en el segundo trimestre del año</h3>
+            <img src="../img/Panel-solar.jpg" height="150px" width="250px" alt="Panel solar">
+            <p>
+                Gracias a la habilitación comercial de 7 proyectos de fuentes renovables a gran escala en los meses de abril, mayo y junio, pudieron añadirse 173,12 MW de potencia instalada al Sistema Argentino de Interconexión (SADI), continuando con el avance del sector en el país.
+            </p>
+            <a href="https://www.argentina.gob.ar/noticias/energias-renovables-se-sumaron-mas-de-173-mw-al-sistema-electrico-en-el-segundo-trimestre" class="Boton" target="_blank">Leer más</a>
         </div>
+        <div class="noticia">
+            <h3>Mingyang pone en servicio en China un aerogenerador marino de 16 MW y 260 metros de diámetro de rotor</h3>
+            <img src="../img/Aerogenerador.jpg" height="150px" width="250px" alt="Aerogenerador">
+            <p>
+                El aerogenerador marino MySE 16-260 de Mingyang Smart Energy ha entrado en servicio y está funcionando a pleno rendimiento en China, según la empresa,y ahora, Mingyang ha superado a Goldwind en tener instalado el aerogenerador más grande del mundo.
+            </p>
+            <a href="https://argentinaeolica.org.ar/novedades/mingyang-pone-en-servicio-en-china-un-aerogenerador-marino-de-16-mw-y-260-metros-de-diametro-de-rotor#:~:text=El%20aerogenerador%20marino%20MySE%2016,compatriota%20de%20Mingyang%20tiene%20un" class="Boton" target="_blank">Leer más</a>
+        </div>
+        <div class="noticia">
+            <h3>La UE aprueba de forma definitiva elevar al 42,5% el objetivo de energías renovables para 2030</h3>
+            <img src="../img/Paisaje.jpg" height="150px" width="250px" alt="Paisaje">
+            <p>
+                La nueva directiva sobre energías renovables, que eleva al 42,5% el objetivo de la UE para 2030 y que suma un complemento indicativo adicional del 2,5% de cara a alcanzar una cuota de renovables del 45% en el mix energético, ha recibido este lunes el aprobado definitivo del Consejo.
+            </p>
+            <a href="https://www.elperiodico.com/es/economia/20231009/ue-aprueba-definitivamente-42-5-93138609" class="Boton" target="_blank">Leer más</a>
+        </div>
+        <div class="noticia">
+            <h3>Alianza estratégica para la primera fábrica de motos 100% sostenible con YPF Luz</h3>
+            <img src="../img/Honda.jpg" height="150px" width="250px" alt="Honda">
+            <p>
+                En 2022, YPF celebró su alianza con Honda Motor de Argentina, con el foco en desarrollar soluciones de valor para la industria, proveyendo de energía renovable por parte de YPF Luz a la planta de Campana. Convirtiéndola en la primera  fábrica de motos a nivel local en utilizar 100% energía sustentable.
+            </p>
+            <a href="https://www.lanacion.com.ar/economia/negocios/alianza-estrategica-para-la-primera-fabrica-de-motos-100-sostenible-con-ypf-luz-nid04102023/" class="Boton" target="_blank">Leer más</a>
+        </div>
+        <div class="noticia">
+            <h3>Tesla inyectó 5 millones de autos eléctricos al mercado global desde 2020</h3>
+            <img src="../img/tesla.webp" height="150px" width="250px" alt="Autos tesla">
+            <p>
+                La compañía de Elon Musk sigue su crecimiento acelerado. En solo tres años, entre 2020 y 2023 continuó abriendo fábricas y la producción subió de 1 a 5 millones de unidades. Incluso en su planta de Shanghai. 
+            </p>
+            <a href="https://www.perfil.com/noticias/modo-fontevecchia/tesla-inyecto-5-millones-de-autos-electricos-al-mercado-global-desde-2020-modof.phtml" class="Boton" target="_blank">Leer más</a>
+        </div>
+        <div class="noticia">
+            <h3>Centroamérica: líder en renovables y en busca de la transición energética</h3>
+            <img src="../img/centroamerica.jpeg" height="150px" width="250px" alt="Paneles y aerogeneradores">
+            <p>
+                Más del 60% de La energía que se produce en Centroamérica proviene de fuentes naturales: sol, agua, viento, calor interno de la tierra; y otros recursos que permiten reducir el costo para la industria y los consumidores.
+            </p>
+            <a href="https://revistanuevasenergias.com/2023/10/10/centroamerica-lider-en-renovables-y-en-busca-de-la-transicion-energetica/" class="Boton" target="_blank">Leer más</a>
+        </div>
+        
     </div>
 </body>
 </html>
