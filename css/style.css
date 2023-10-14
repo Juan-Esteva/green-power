@@ -20,31 +20,40 @@ JE 20230927-1115
   font-family: Roboto, Sans-Serif;
 }
 
-footer, img {
+footer {
     text-align: center;
     font-size: 12px;
     background-color: var(--fondo-std);
     border-radius: 5px;
     width: 100%;
+    /* float: none;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
-footer, .fila, .navbar, .img{
+footer, .fila, .navbar, .img, p{
   display: flex;
+  width: 100%;
+  float: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
   align-content: center;
 }
 
-
-
-/* .img {
-  display: flex;
+.img {
+  /* display: flex;  esto esta mas arriba*/
   width: 100%;
+  /* text-align: center; */
+  /* float: none;
+  margin-left: auto;
+  margin-right: auto; */
   justify-content: space-evenly;
   border-radius: 5px;
-  margin: 5px;
-} */
+  /* margin: 5px; */
+}
 
 .row {
   display: flex;
@@ -78,7 +87,7 @@ footer, .fila {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  footer, .navbar, .fila, .descrip, .aa  {   
+  footer, .navbar, .fila, .descrip, .aa, .mapas, .img  {   
     flex-direction: column;
   }
 }
@@ -160,6 +169,13 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.mapas {
+  display: flex;
+  border: solid 5px beige;
+  text-align: center;
+}
+
 /* Estilos usados en las páginas de detalle de productos:
 
     producto-001.html  Termotanques solares
