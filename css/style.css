@@ -20,7 +20,7 @@ JE 20230927-1115
   font-family: Roboto, Sans-Serif;
 }
 
-footer {
+footer, img {
     text-align: center;
     font-size: 12px;
     background-color: var(--fondo-std);
@@ -36,9 +36,15 @@ footer, .fila, .navbar, .img{
   align-content: center;
 }
 
-.img {
+
+
+/* .img {
+  display: flex;
   width: 100%;
-}
+  justify-content: space-evenly;
+  border-radius: 5px;
+  margin: 5px;
+} */
 
 .row {
   display: flex;
