@@ -11,6 +11,8 @@ JE 20230927-1115
   --fondo-std: rgba(116, 211, 114, 1.0);
   --fondo-menu: rgba(64, 128, 63, 1.0);
   --frente-std: white;
+  --top-logo: 300px;
+  --logo-size: 500px;
 }
 
 * {
@@ -89,7 +91,7 @@ h1, .imagen {
   text-align: center;
 }
 
-.nav  {
+.nav, .dropdown {
   background-color: var(--fondo-std);
   color: white;
   text-decoration: none;
@@ -376,4 +378,39 @@ p{
     p{
         -webkit-line-clamp:7;
       }
+}
+
+/* Logo animado página principal*/
+
+.moving-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: intro;
+  animation-duration:4s;
+  animation-iteration-count:1 ;
+  animation-fill-mode:forwards;
+}
+
+@keyframes intro {
+  0%     {left:0%;  top:var(--top-logo); opacity:0; height:5%; width:5%; rotate:0deg}
+  10%     {left:5%;  top:var(--top-logo); opacity:0.2; height:5%; width:5%; rotate:450deg}
+  100%   {left:20%; top:var(--top-logo); opacity:1.0; height:var(--logo-size); width:var(--logo-size); rotate:360deg}
+}
+
+p {
+  margin: 20px 5px 20px 5px;
+  text-align: justify;
+}
+
+.ps-bkgd {
+    position: relative;
+    overflow: hidden;
+    opacity: 0.15;
+}
+
+.opening-video {
+  position: absolute;
+  left: 0;
+  top: 300;
 }
