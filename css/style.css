@@ -8,8 +8,11 @@ Cambié esta parte del código para unificar la definición de los colores en un
 JE 20230927-1115
 
 */
+
+  /* --fondo-std: #77e76a;
+  --fondo-menu: #219e21; */
   --fondo-std: rgba(116, 211, 114, 1.0);
-  --fondo-menu: rgba(64, 128, 63, 1.0);
+  --fondo-menu: rgba(64, 128, 63, 1.0);  
   --frente-std: white;
   --top-logo: 300px;
   --logo-size: 500px;
@@ -75,7 +78,7 @@ footer, .fila {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  footer, .navbar, .fila, .descrip, .aa  {   
+  footer, .navbar, .fila, .descrip, .aa, .img  {   
     flex-direction: column;
   }
 }
@@ -166,19 +169,30 @@ h4 {
   border-radius: 5%;
   margin-left: 0px;
   margin-right: auto;
-  background-color: rgba(116, 211, 114, 1.0);
+  background-color: var(--fondo-std);
   position: relative;
-  animation-name: example;
+  animation-name: secciones;
   animation-duration: 4s;
   animation-iteration-count: 1;
 }
 
-@keyframes example {
-  0%   {background-color: rgba(116, 211, 114, 1.0); left:0px; top:0px;}
-  25%  {background-color:rgba(116, 211, 114, 1.0); left:200px; top:0px;}
-  100% {background-color:rgba(116, 211, 114, 1.0); left:0px; top:0px;}
+@keyframes secciones {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  100% {left:0px; top:0px;}
 
 }
+
+.qs {
+  font-size: 18px;
+  color: white;
+}
+
+.qs p {
+  font-size: 15px;
+  color: black
+}
+
 /* Estilos usados en las páginas de detalle de productos:
 
     producto-001.html  Termotanques solares
