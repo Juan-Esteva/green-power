@@ -140,15 +140,13 @@ header {
 }
 
 .nav, .dropdown {
-  background-color: var(--fondo-std);
+  background-color: var(--fondo-menu);
   color: white;
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
   margin-left: 5px;
-  /* justify-content: center; */
-  /* align-items: center;
-  text-align: center; */
+
 }
 /*  lo q quiero q cambie cuando paso el mouse por arriba */
 .nav:hover { 
@@ -259,11 +257,11 @@ h2.producto {
 
 h3.producto {
   color:white;
-  background-color: var(--fondo-menu);
+  background-color: var(--fondo-std);
   text-align: center;
   padding: 5px;
   margin: 10px 0px 10px 0px;
-  font-size: 1.15rem;
+  font-size: 1.30rem;
   border-radius: 5px;
 }
 
