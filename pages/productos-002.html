@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros productos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a class="nav" href="../index.html">Inicio</a> 
-            <a class="nav" href="quienes_somos.html">Quienes somos</a>
-            <div class="dropdown">
-                <div class="nav" class="dropbtn" >Nuestros Productos</div>
-                <div class="dropdown-content">
-                    <a class="nav" href="productos-001.html">Termotanques solares</a>
-                    <a class="nav" href="productos-002.html">Electricidad fotovoltaica</a>
-                </div>
-            </div>    
-            <a class="nav" href="blog_noticias.html">Blog de noticias</a>
-            <a class="nav" href="preguntas.html">Preguntas Frecuentes</a>
-            
-            <a class="nav" href="registro.html">Contacto</a>            
+        <header>
+            <h1>Green-Power</h1>
+            <h2>Energía solar para un futuro brillante</h2>
+        </header>
+
+    
+        <span class="nav-bar" id="btnMenu"><i class="fa fa-bars"></i> Menú </span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="/pages/quienes_somos.html" class="menu__link">Quienes Somos</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link submenu-btn">Productos <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="/pages/productos-001.html" class="menu__link">Termotanques</a></li>
+                        <li class="menu__item"><a href="/pages/productos-002.html" class="menu__link">fotovoltaica</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Generadores</a></li>
+                    </ul>
+    
+                </li>
+                <li class="menu__item"><a href="/pages/blog_noticias.html" class="menu__link">Noticias</a></li>
+                <li class="menu__item"><a href="/pages/registro.html" class="menu__link">Contacto</a></li>
+            </ul>
         </nav>
-        <h1>Green-Power</h1>
-    </header>
+        <script src="/scripts/script.js"></script>
+
     <main>
       <h2 class="producto">Electricidad Fotovoltaica</h2>
       
@@ -51,28 +61,28 @@
     </main>
     <footer>
         <div class="fila">
-            <div>
-                <p>
+            <div class="col">
+                <h2>
                     <i class="fa-solid fa-phone"></i> Teléfono
-                </p>
+                </h2>
                 <span class="info-contacto">222-2233445</span>
             </div>
-            <div>
-                <p>
+            <div class="col">
+                <h2>
                     <i class="fa-solid fa-envelope"></i> Correo
-                </p>
+                </h2>
                 <span class="info-contacto">correo@correo.com.ar </span>
             </div>
-            <div>
-                <p>
+            <div class="col">
+                <h2>
                     <i class="fa-solid fa-globe"></i> Página Web
-                </p>
+                </h2>
                 <span class="info-contacto">www.greenpower.com </span>
             </div>
-            <div>
-                <p>
+            <div class="col">
+                <h2>
                     <i class="fa-brands fa-whatsapp"></i> whatsapp
-                </p>
+                </h2>
                 <span class="info-contacto">222-2233445</span>
             </div>
         </div>

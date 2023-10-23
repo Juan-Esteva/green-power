@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+
 <body>
     <header>
-        <nav class="navbar">
-            <a class="nav" href="../index.html">Inicio</a> 
-            <a class="nav" href="quienes_somos.html">Quienes somos</a>
-            <div class="dropdown">
-                <div class="nav" class="dropbtn" >Nuestros Productos</div>
-                <div class="dropdown-content">
-                    <a class="nav" href="productos-001.html">Termotanques solares</a>
-                    <a class="nav" href="productos-002.html">Electricidad fotovoltaica</a>
-                </div>
-            </div>    
-            <a class="nav" href="blog_noticias.html">Blog de noticias</a>
-            <a class="nav" href="preguntas.html">Preguntas Frecuentes</a>
-            
-            <a class="nav" href="registro.html">Contacto</a>            
-        </nav>
         <h1>Green-Power</h1>
+        <h2>Energía solar para un futuro brillante</h2>
     </header>
+
+    <span class="nav-bar" id="btnMenu"><i class="fa fa-bars"></i> Menú </span>
+    <nav class="main-nav">
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="/index.html" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="/pages/quienes_somos.html" class="menu__link">Quienes Somos</a></li>
+            <li class="menu__item container-submenu">
+                <a href="#" class="menu__link submenu-btn">Productos <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li class="menu__item"><a href="/pages/productos-001.html" class="menu__link">Termotanques</a></li>
+                    <li class="menu__item"><a href="/pages/productos-002.html" class="menu__link">fotovoltaica</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Generadores</a></li>
+                </ul>
+
+            </li>
+            <li class="menu__item"><a href="/pages/blog_noticias.html" class="menu__link">Noticias</a></li>
+            <li class="menu__item"><a href="/pages/registro.html" class="menu__link">Contacto</a></li>
+        </ul>
+    </nav>
+    <script src="/scripts/script.js"></script>
+
 
     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
-           
+
             <h3>CONTACTENOS: </h3>
 
             <div class="container">
-               
+
                 <form id="contact-form">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
@@ -53,54 +64,42 @@
                     <div class="form-group">
                         <button type="submit">Enviar</button>
                     </div>
-                    
+
                 </form>
                 <div id="respuesta"></div>
-            </div>
-            
-
-            
-            <div class="fila">
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-phone"></i> Teléfono
-                    </h2>
-                    <span class="info-contacto">222-2233445</span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-envelope"></i> Correo
-                    </h2>
-                    <span class="info-contacto">correo@correo.com.ar </span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-solid fa-globe"></i> Página Web
-                    </h2>
-                    <span class="info-contacto">www.greenpower.com </span>
-                </div>
-                <div class="col">
-                    <h2>
-                        <i class="fa-brands fa-whatsapp"></i> whatsapp
-                    </h2>
-                    <span class="info-contacto">222-2233445</span>
-                </div>
             </div>
         </div>
     </section>
 
-    <!--Mapa de google-->
 
-   
-
-
-
-
-    <!--<footer>
-        <p>mail de Contacto</p>
-        <p>teléfono de contacto</p>
-        <p>iconos de redes sociales</p>
-        <p>ubicacion</p>
-    </footer-->
+    <footer>
+        <div class="fila">
+            <div class="col">
+                <h2>
+                    <i class="fa-solid fa-phone"></i> Teléfono
+                </h2>
+                <span class="info-contacto">222-2233445</span>
+            </div>
+            <div class="col">
+                <h2>
+                    <i class="fa-solid fa-envelope"></i> Correo
+                </h2>
+                <span class="info-contacto">correo@correo.com.ar </span>
+            </div>
+            <div class="col">
+                <h2>
+                    <i class="fa-solid fa-globe"></i> Página Web
+                </h2>
+                <span class="info-contacto">www.greenpower.com </span>
+            </div>
+            <div class="col">
+                <h2>
+                    <i class="fa-brands fa-whatsapp"></i> whatsapp
+                </h2>
+                <span class="info-contacto">222-2233445</span>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

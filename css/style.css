@@ -16,6 +16,8 @@ JE 20230927-1115
   --frente-std: white;
   --top-logo: 300px;
   --logo-size: 500px;
+  --botones: rgba(64, 128, 63, 1.0);
+  --botones_over: linear-gradient(135deg, #aaffaa, #55ff55);
 }
 
 * {
@@ -25,6 +27,7 @@ JE 20230927-1115
   font-family: Roboto, Sans-Serif;
 }
 
+
 footer {
     text-align: center;
     font-size: 12px;
@@ -32,6 +35,8 @@ footer {
     border-radius: 5px;
     width: 100%;
 }
+
+
 
 footer, .fila, .navbar, .img{
   display: flex;
@@ -64,6 +69,16 @@ footer, .fila, .navbar, .img{
   max-width: 100%;
 }
 
+h4{
+  text-align: center;
+}
+footer  .info-contacto{
+color: white;
+font-size: 15px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+font-weight: bold;
+}
+
 /* de 500 para abajo se hace una columna */
 @media (max-width: 650px) {
   .column {
@@ -72,6 +87,7 @@ footer, .fila, .navbar, .img{
     justify-content: space-between;
   }
 }
+
 
 footer, .fila {
   justify-content: space-around;
@@ -84,16 +100,43 @@ footer, .fila {
   }
 }
 
+
+header h1, h2{
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+text-align: center;
+
+ 
+    position: relative;
+    animation: aparecer 3s forwards;
+    opacity: 0; 
+    white-space: nowrap; 
+    overflow: hidden; 
+  }
+  
+  @keyframes aparecer {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%; 
+      opacity: 1; 
+    }
+  }
+
+
+ 
+    
+
 header {
     background-color: var(--fondo-menu);
     padding: 7px;
+    margin-top: 0px;
     border-radius: 5px;
     margin-bottom: 5px;
 }
-
-h1, .imagen {
-  padding-top: 10px ;
-  text-align: center;
+.nav{
+  margin: 0;
 }
 
 .nav, .dropdown {
@@ -116,7 +159,6 @@ h1, .imagen {
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 .dropdown-content {
   display: none;
@@ -125,7 +167,6 @@ h1, .imagen {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  
 }
 .dropdown-content > .nav {
   background-color: rgb(240, 234, 234);
@@ -261,15 +302,15 @@ p.iconos-leyenda {
 /*Formulario de contactos
 registros.html*/
 
-.contacto{
-   
-  background-color: #202020;
-  padding: 140px 0 100px 0;
-  color: #e6e6e6;
-  text-align: center;
+.contacto{  
+  background-image: linear-gradient(to bottom, #2fd466, #27a146);
+  /*background-color: #202020;*/
+  padding: 20px 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  color: white;
+  text-align: center; 
 }
 .contacto .contenido-seccion{
-
   max-width: 1000px;
   margin: auto;
   padding: 0 10px;
@@ -290,10 +331,13 @@ registros.html*/
 }
 
 .container {
+  background-image: url(/img/energia-renovables1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #202020;
   border-radius: 5px;
 }
 
@@ -311,13 +355,15 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 3px;
 }
 
 button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: rgba(64, 128, 63, 1.0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
@@ -325,7 +371,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #aaffaa, #55ff55);
 }
 
 
@@ -333,7 +379,7 @@ button[type="submit"]:hover {
 
 
 h3{
-    color: #fa6446;
+    color: #ffffff;
 }
 
 a{
@@ -455,3 +501,93 @@ p {
   left: 0;
   top: 300;
 }
+
+
+/*Nuevo menú desplegable responsive*/
+
+.nav-bar {
+  background-color: green;
+  padding: 20px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+.menu,.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.menu {
+  padding: 0px;
+  height: 60px;
+  background: rgba(64, 128, 63, 1.0);
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.5s;
+}
+
+.menu__link {
+  display: block;
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.menu__link:hover{
+  background:linear-gradient(135deg, #035303, #17e017)
+}
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.submenu .menu__link {
+  background: rgb(176, 218, 78);
+  padding-left: 50px;
+}
+
+.mostrar {
+  margin-left: 0;
+}
+
+
+
+@media(min-width: 1024px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .menu {
+    margin-left: 0;
+    display: flex;
+  }
+
+  .container-submenu {
+    position: relative;
+  }
+
+  .submenu {  
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .container-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+
+ }
