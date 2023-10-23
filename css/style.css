@@ -257,7 +257,7 @@ h2.producto {
 
 h3.producto {
   color:white;
-  background-color: var(--fondo-std);
+  background-color: var(--fondo-menu);
   text-align: center;
   padding: 5px;
   margin: 10px 0px 10px 0px;
