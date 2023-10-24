@@ -21,3 +21,8 @@ for (let i = 0; i < subMenuBtn.length; i++) {
     }
   });
 }
+
+/* Funcion para redireccionar noticias*/
+function redireccionar(url) {
+  window.open(url, '_blank');
+}
