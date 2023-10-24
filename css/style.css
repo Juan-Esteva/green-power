@@ -140,13 +140,15 @@ header {
 }
 
 .nav, .dropdown {
-  background-color: var(--fondo-menu);
+  background-color: var(--fondo-std);
   color: white;
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
   margin-left: 5px;
-
+  /* justify-content: center; */
+  /* align-items: center;
+  text-align: center; */
 }
 /*  lo q quiero q cambie cuando paso el mouse por arriba */
 .nav:hover { 
@@ -229,12 +231,12 @@ h4 {
 }
 
 .qs {
-  font-size: 23px;
+  font-size: 18px;
   color: white;
 }
 
 .qs p {
-  font-size: 18px;
+  font-size: 15px;
   color: black
 }
 
@@ -261,7 +263,7 @@ h3.producto {
   text-align: center;
   padding: 5px;
   margin: 10px 0px 10px 0px;
-  font-size: 1.30rem;
+  font-size: 1.15rem;
   border-radius: 5px;
 }
 
@@ -300,7 +302,7 @@ p.iconos-leyenda {
 /*Formulario de contactos
 registros.html*/
 
-.contacto {  
+.contacto{  
   background-image: linear-gradient(to bottom, #2fd466, #27a146);
   /*background-color: #202020;*/
   padding: 20px 0 20px 0;
@@ -308,30 +310,6 @@ registros.html*/
   color: white;
   text-align: center; 
 }
-
-.contacto .imagen {
-  max-width: 50%;
-  margin: auto;
-  padding: 0 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  color: white;
-  text-align: center; 
-}
-
-.contenido-seccion {
-  background-image: url(../img/energia-renovables1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.contenido-seccion, .container {
-  max-width: 600px;
-  margin: auto;
-  padding: 100px;
-  border-radius: 5px;
-}
-
 .contacto .contenido-seccion{
   max-width: 1000px;
   margin: auto;
@@ -352,8 +330,8 @@ registros.html*/
   color: #40803F;
 }
 
-/* .container {
-  background-image: url(../img/energia-renovables1.jpg);
+.container {
+  background-image: url(/img/energia-renovables1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -361,7 +339,7 @@ registros.html*/
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
-} */
+}
 
 .form-group {
   margin-bottom: 20px;
@@ -400,9 +378,18 @@ button[type="submit"]:hover {
 /* Estilos usados en Blog de noticias*/
 
 
+h3{
+    color: #ffffff;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
 .containerNoticias{
     padding: 0 25px 25px 25px;
-    background-image: linear-gradient(to bottom, #2fd466, #27a146);
+    background-color: #202020;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -411,32 +398,42 @@ button[type="submit"]:hover {
 }
 
 .noticia{
-    width: 500px;
-    height: 310px;
-    position: relative;
+    background-color: white;
+    width: 450px;
+    height: 460px;
     margin: 25px 25px 25px 25px;
+    padding: 0 25px 25px 25px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    box-shadow: rgb(24, 49, 83) 5px 9px 0px 0px;
+}
+
+.Boton{
+    margin-top: auto;
+    padding: 2px 5px 2px 5px;
+    background-color: lightslategray;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 20px;
+    box-shadow: rgb(24, 49, 83) 2px 5px 0px 0px;
     cursor: pointer;
 }
 
-
-.imagenFondo{
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.Boton:hover {
+    transition: all 0.4s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #ecee70;
 }
 
-h3.tituloNot{
-  margin-top: auto;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+p{
+    margin: auto;
+    font-size: 1.0em;
 }
-
 
 @media (max-width:500px){
 
@@ -444,8 +441,14 @@ h3.tituloNot{
         font-size: 20px;
     }
 
-    h3.tituloNot{
+    h3{
         font-size: 15px;
+    }
+
+    p{
+        font-size: 15px;
+        height: 20%;
+        overflow-y: scroll;
     }
 
     .containerNoticias{
@@ -456,7 +459,7 @@ h3.tituloNot{
 
     .noticia{
         width: 100%;
-        height: 240px;
+        height: 400px;
         margin: 20px 0 0 0;
       }
     p{
