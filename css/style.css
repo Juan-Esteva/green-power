@@ -36,8 +36,6 @@ footer {
     width: 100%;
 }
 
-
-
 footer, .fila, .navbar, .img{
   display: flex;
 }
@@ -88,7 +86,6 @@ font-weight: bold;
     justify-content: space-between;
   }
 }
-
 
 footer, .fila {
   justify-content: space-around;
@@ -142,9 +139,6 @@ header {
   padding: 5px;
   border-radius: 5px;
   margin-left: 5px;
-  /* justify-content: center; */
-  /* align-items: center;
-  text-align: center; */
 }
 /*  lo q quiero q cambie cuando paso el mouse por arriba */
 .nav:hover { 
@@ -227,20 +221,16 @@ h4 {
 }
 
 .qs {
-  font-size: 18px;
+  font-size: 25px;
   color: white;
 }
 
 .qs p {
-  font-size: 15px;
+  font-size: 20px;
   color: black
 }
 
-/* Estilos usados en las páginas de detalle de productos:
-
-    producto-001.html  Termotanques solares
-    producto-002.html  Paneles solares 
-    
+/* Estilos usados en las páginas de detalle de productos: 
 */
 
 h2.producto {
