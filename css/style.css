@@ -378,18 +378,9 @@ button[type="submit"]:hover {
 /* Estilos usados en Blog de noticias*/
 
 
-h3{
-    color: #ffffff;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-}
-
 .containerNoticias{
     padding: 0 25px 25px 25px;
-    background-color: #202020;
+    background-image: linear-gradient(to bottom, #2fd466, #27a146);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -398,42 +389,32 @@ a{
 }
 
 .noticia{
-    background-color: white;
-    width: 450px;
-    height: 460px;
+    width: 500px;
+    height: 310px;
+    position: relative;
     margin: 25px 25px 25px 25px;
-    padding: 0 25px 25px 25px;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgb(24, 49, 83) 5px 9px 0px 0px;
-}
-
-.Boton{
-    margin-top: auto;
-    padding: 2px 5px 2px 5px;
-    background-color: lightslategray;
-    border-width: 2px;
-    border-style: solid;
-    font-size: 20px;
-    box-shadow: rgb(24, 49, 83) 2px 5px 0px 0px;
+    overflow: hidden;
     cursor: pointer;
 }
 
-.Boton:hover {
-    transition: all 0.4s;
-    transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #ecee70;
+
+.imagenFondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-p{
-    margin: auto;
-    font-size: 1.0em;
+h3.tituloNot{
+  margin-top: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
+
 
 @media (max-width:500px){
 
@@ -441,14 +422,8 @@ p{
         font-size: 20px;
     }
 
-    h3{
+    h3.tituloNot{
         font-size: 15px;
-    }
-
-    p{
-        font-size: 15px;
-        height: 20%;
-        overflow-y: scroll;
     }
 
     .containerNoticias{
@@ -459,7 +434,7 @@ p{
 
     .noticia{
         width: 100%;
-        height: 400px;
+        height: 240px;
         margin: 20px 0 0 0;
       }
     p{
