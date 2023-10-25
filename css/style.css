@@ -53,6 +53,7 @@ footer, .fila, .navbar, .img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* margin-bottom: 15px; */
 }
 
 /* 3 columnas*/
@@ -183,14 +184,9 @@ header {
 /* ESTILO PREGUNTAS FRECUENTES */
 .faq {
   color: var(--fondo-menu);
-  font-size: 15px;
-  border-color: #fa6446;
-  border: 5px;
+  font-size: 18px;
+  /* border: 5px; */
   padding-top: 5px;
-}
-
-.rta {
-  font-size: 13.5px;
 }
 
 a {
@@ -204,8 +200,7 @@ h4 {
   width: 85%;
   display: block;
   border-radius: 5%;
-  margin-left: 0px;
-  margin-right: auto;
+  margin: 20px auto 10px 0px;
   background-color: var(--fondo-std);
   position: relative;
   animation-name: secciones;
@@ -215,18 +210,18 @@ h4 {
 
 @keyframes secciones {
   0%   {left:0px; top:0px;}
-  25%  {left:200px; top:0px;}
+  25%  {left:150px; top:0px;}
   100% {left:0px; top:0px;}
 
 }
 
 .qs {
-  font-size: 25px;
+  font-size: 23px;
   color: white;
 }
 
-.qs p {
-  font-size: 20px;
+.qs p, .descrip, .rta {
+  font-size: 18px;
   color: black
 }
 
