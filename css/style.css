@@ -248,8 +248,8 @@ p.iconos-leyenda {
 registros.html*/
 
 .contacto{  
-  background-image: linear-gradient(to bottom, #2fd466, #27a146);
-  /*background-color: #202020;*/
+  /* background-image: linear-gradient(to bottom, #2fd466, #27a146); */
+  background-color: white;
   padding: 20px 0 20px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   color: white;
@@ -312,10 +312,6 @@ registros.html*/
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
-}
-.imag-fondo {
-  opacity: 0.6;
-  display: flex;
 }
 
 .form-group {
