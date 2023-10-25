@@ -146,46 +146,10 @@ header {
   background-color: rgb(166, 223, 165);
 }
 
-/* MENU DESPLEGABLE  */
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--fondo-menu);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content > .nav {
-  background-color: rgb(240, 234, 234);
-}
-
-.dropdown-content a {
-  color: black;
-  text-decoration: none;
-  display: block;
-} */
-/* color q se pone cuando pongo el cursor arriba */
-/* .dropdown-content a:hover {
-  background-color: var(--fondo-std)
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #5b605b;
-} */
-
 /* ESTILO PREGUNTAS FRECUENTES */
 .faq {
   color: var(--fondo-menu);
   font-size: 18px;
-  /* border: 5px; */
   padding-top: 5px;
 }
 
@@ -290,6 +254,7 @@ registros.html*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   color: white;
   text-align: center; 
+  position: relative;
 }
 
 /* .contacto .imagen {
@@ -339,7 +304,7 @@ registros.html*/
 }
 
 .container {
-  background-image: url(../img/energia-renovables1.jpg);
+  background-image: url(../img/energia-renovables1\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -347,6 +312,10 @@ registros.html*/
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
+}
+.imag-fondo {
+  opacity: 0.6;
+  display: flex;
 }
 
 .form-group {
@@ -377,7 +346,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: linear-gradient(135deg, #aaffaa, #55ff55);
+  background: linear-gradient(135deg, #aaffaa, #55ff55,1);
 }
 
 
