@@ -399,7 +399,6 @@ a {
 
 .containerNoticias{
     padding: 0 25px 25px 25px;
-    background-image: linear-gradient(to bottom, #2fd466, #27a146);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -417,8 +416,14 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: transform 0.5s;
   cursor: pointer;
 }
+
+.noticia:hover {
+  transform: scale(1.05);
+}
+
 /* .noticia{
   background-color: white;
   width: 450px;
