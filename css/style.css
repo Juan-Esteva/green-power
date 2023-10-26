@@ -9,8 +9,6 @@ JE 20230927-1115
 
 */
 
-  /* --fondo-std: #77e76a;
-  --fondo-menu: #219e21; */
   --fondo-std: rgba(116, 211, 114, 1.0);
   --fondo-menu: rgba(64, 128, 63, 1.0);  
   --frente-std: white;
@@ -21,7 +19,7 @@ JE 20230927-1115
 }
 
 * {
-  margin: 0px;
+  margin: 0 0.3%;
   padding: 0px;
   box-sizing: border-box;
   font-family: Roboto, Sans-Serif;
@@ -36,7 +34,7 @@ footer {
     width: 100%;
 }
 
-footer, .fila, .navbar, .img{
+footer, .fila, .img{
   display: flex;
 }
 
@@ -44,12 +42,11 @@ body img {
   width: 100%;
   opacity: 0.8/;
 }
-.navbar {
-  align-content: center;
-}
+
 
 .img {
-  width: 100%;
+  margin-top: 10px;
+  /* width: 100%; */
   align-content: center;
 }
 
@@ -57,14 +54,13 @@ body img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* margin-bottom: 15px; */
 }
 
 /* 3 columnas*/
-.column {
+.column { 
   flex: 30%;
   max-width: 30%;
-}
+} 
 
 .column .imag {
   margin-top: 8px;
@@ -83,26 +79,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 font-weight: bold;
 }
 
-/* de 500 para abajo se hace una columna */
-@media (max-width: 650px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-    justify-content: space-between;
-  }
-}
-
 footer, .fila {
   justify-content: space-around;
 }
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  footer, .navbar, .fila, .descrip, .aa, .img  {   
-    flex-direction: column;
-  }
-}
-
 
 header h1, h2 {
   color: white;
@@ -122,13 +101,8 @@ header h1, h2 {
 }
   
 @keyframes aparecer {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%; 
-    opacity: 1; 
-  }
+  0% { width: 0; }
+  100% { width: 100%; opacity: 1; }
 }
 
 header {
@@ -143,29 +117,12 @@ header {
   margin: 0;
 }
 
-.nav, .dropdown {
-  background-color: var(--fondo-std);
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  margin-left: 5px;
-}
-/*  lo q quiero q cambie cuando paso el mouse por arriba */
-.nav:hover { 
-  background-color: rgb(166, 223, 165);
-}
 
-/* ESTILO PREGUNTAS FRECUENTES */
+/* ESTILO PREGUNTAS FRECUENTES Y QUIENES SOMOS */
 .faq {
   color: var(--fondo-menu);
   font-size: 18px;
   padding-top: 5px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 h4 {
@@ -177,16 +134,7 @@ h4 {
   margin: 20px auto 10px 0px;
   background-color: var(--fondo-std);
   position: relative;
-  animation-name: secciones;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-}
-
-@keyframes secciones {
-  0%   {left:0px; top:0px;}
-  25%  {left:150px; top:0px;}
-  100% {left:0px; top:0px;}
-
+  animation: aparecer 3s forwards;
 }
 
 .qs {
@@ -258,7 +206,6 @@ p.iconos-leyenda {
 registros.html*/
 
 .contacto{  
-  /* background-image: linear-gradient(to bottom, #2fd466, #27a146); */
   background-color: white;
   padding: 20px 0 20px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -266,29 +213,6 @@ registros.html*/
   text-align: center; 
   position: relative;
 }
-
-/* .contacto .imagen {
-  max-width: 50%;
-  margin: auto;
-  padding: 0 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  color: white;
-  text-align: center; 
-}
-
-.contenido-seccion {
-  background-image: url(../img/energia-renovables1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-/* 
-.contenido-seccion, .container {
-  max-width: 600px;
-  margin: auto;
-  padding: 100px;
-  border-radius: 5px;
-} */
 
 .contacto .contenido-seccion{
   max-width: 1000px;
@@ -407,37 +331,6 @@ h3.tituloNot{
   z-index: 1;
 }
 
-@media (max-width:500px){
-
-  h1{
-    font-size: 20px;
-  }
-
-  h2{
-    font-size: 16px;
-  }
-
-  h3.tituloNot{
-    font-size: 15px;
-  }
-
-  .containerNoticias{
-    font-size: 24px;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .noticia{
-    width: 100%;
-    height: 240px;
-    margin: 20px 0 0 0;
-  }
-  p{
-    -webkit-line-clamp:7;
-  }
-
-}
-
 /*   Menú desplegable */
 
 .nav-bar {
@@ -494,9 +387,77 @@ h3.tituloNot{
   margin-left: 0;
 }
 
+/* MEDIA QUERIES */
+
+/* TAMAÑO CELULAR */
+
+ @media (max-width: 320px){
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  h3.tituloNot{
+    font-size: 15px;
+  }
+
+  .containerNoticias{
+    font-size: 24px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .noticia{
+    width: 100%;
+    height: 240px;
+    margin: 20px 0 0 0;
+  }
+  p{
+    -webkit-line-clamp:7;
+  }
+
+  footer, .fila, .descrip  {   
+    flex-direction: column;
+  }
+
+  .mapas {
+    max-width: 100%;
+  }
+
+}
 
 
-@media(min-width: 1024px) {
+/* TAMAÑO TABLET */
+
+@media (min-width:321px) and (max-width:768px){
+  .column {
+    flex: 40%;
+    max-width: 40%;
+    justify-content: space-between;
+  }
+
+  footer, .fila, .descrip  {   
+    flex-direction: column;
+  }
+
+  .mapas {
+    max-width: 50%;
+  }
+}
+    
+
+/* TAMAÑO PC */
+
+@media(min-width: 769px) {
   .nav-bar {
     display: none;
   }
@@ -536,4 +497,8 @@ h3.tituloNot{
     visibility: visible;
   }
 
- }
+  .mapas {
+    max-width: 50%;
+  }
+
+ } 
