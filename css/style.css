@@ -57,6 +57,7 @@ body img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* margin-bottom: 15px; */
 }
 
 /* 3 columnas*/
@@ -158,14 +159,8 @@ header {
 /* ESTILO PREGUNTAS FRECUENTES */
 .faq {
   color: var(--fondo-menu);
-  font-size: 15px;
-  border-color: #fa6446;
-  border: 5px;
+  font-size: 18px;
   padding-top: 5px;
-}
-
-.rta {
-  font-size: 13.5px;
 }
 
 a {
@@ -179,8 +174,7 @@ h4 {
   width: 85%;
   display: block;
   border-radius: 5%;
-  margin-left: 0px;
-  margin-right: auto;
+  margin: 20px auto 10px 0px;
   background-color: var(--fondo-std);
   position: relative;
   animation-name: secciones;
@@ -190,18 +184,18 @@ h4 {
 
 @keyframes secciones {
   0%   {left:0px; top:0px;}
-  25%  {left:200px; top:0px;}
+  25%  {left:150px; top:0px;}
   100% {left:0px; top:0px;}
 
 }
 
 .qs {
-  font-size: 25px;
+  font-size: 23px;
   color: white;
 }
 
-.qs p {
-  font-size: 20px;
+.qs p, .descrip, .rta {
+  font-size: 18px;
   color: black
 }
 
@@ -264,12 +258,13 @@ p.iconos-leyenda {
 registros.html*/
 
 .contacto{  
-  background-image: linear-gradient(to bottom, #2fd466, #27a146);
-  /*background-color: #202020;*/
+  /* background-image: linear-gradient(to bottom, #2fd466, #27a146); */
+  background-color: white;
   padding: 20px 0 20px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   color: white;
   text-align: center; 
+  position: relative;
 }
 
 /* .contacto .imagen {
@@ -319,7 +314,7 @@ registros.html*/
 }
 
 .container {
-  background-image: url(../img/energia-renovables1.jpg);
+  background-image: url(../img/energia-renovables1\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -357,7 +352,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: linear-gradient(135deg, #aaffaa, #55ff55);
+  background: linear-gradient(135deg, #aaffaa, #55ff55,1);
 }
 
 
