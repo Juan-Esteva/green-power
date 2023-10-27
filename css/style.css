@@ -38,7 +38,7 @@ footer, .fila, .img{
   display: flex;
 }
 
-body img {
+.imgIndex {
   width: 100%;
   opacity: 0.8;
 }
@@ -151,6 +151,12 @@ h4 {
 .qs p, .descrip, .rta {
   font-size: 18px;
   color: black
+}
+
+.contMapas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* Estilos usados en las páginas de detalle de productos: 
@@ -432,6 +438,10 @@ h3.tituloNot{
   }
 
   footer, .fila, .descrip  {   
+    flex-direction: column;
+  }
+
+  .contMapas{
     flex-direction: column;
   }
 
