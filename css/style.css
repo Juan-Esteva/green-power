@@ -94,12 +94,18 @@ header h1, h2 {
   overflow: hidden; 
 }
 
-.logo-gp {
+h1.logo-gp {
   font-family: Verdana;
-  font-size: 4rem;
+  font-size: 3rem;
   color: yellow;
 }
-  
+
+h2.logo-gp {
+  font-family: Verdana;
+  font-size: 1rem;
+  color: yellow;
+}
+ 
 @keyframes aparecer {
   0% { width: 0; }
   100% { width: 100%; opacity: 1; }
