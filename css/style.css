@@ -410,6 +410,22 @@ h3.tituloNot{
     justify-content: space-between;
   }
 
+  h1.logo-gp {
+    font-size: 1rem;
+  }
+
+  h2.logo-gp {
+    font-size: 0.8rem;
+  }
+
+  h2.producto {
+    font-size: 1.15rem;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
   h1{
     font-size: 20px;
   }
@@ -456,6 +472,18 @@ h3.tituloNot{
 
 @media (min-width:321px) and (max-width:768px){
   
+  h1.logo-gp {
+    font-size: 1.5rem;
+  }
+
+  h2.logo-gp {
+    font-size: 1rem;
+  }
+  
+  h2.producto {
+      font-size: 1.15rem;
+  }
+
   h3.tituloNot{
     font-size: 20px;
   }
