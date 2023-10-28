@@ -455,12 +455,7 @@ h3.tituloNot{
 /* TAMAÑO TABLET */
 
 @media (min-width:321px) and (max-width:768px){
-  .column {
-    flex: 40%;
-    max-width: 40%;
-    justify-content: space-between;
-  }
-
+  
   h3.tituloNot{
     font-size: 20px;
   }
