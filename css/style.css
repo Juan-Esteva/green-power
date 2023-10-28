@@ -381,9 +381,10 @@ h3.tituloNot{
   margin: 10px;
 }
 
-.menu__link:hover{
+.menu__link:hover {
   background:linear-gradient(135deg, #035303, #17e017)
 }
+
 .submenu {
   height: 0;
   overflow: hidden;
@@ -391,13 +392,15 @@ h3.tituloNot{
 }
 
 .submenu .menu__link {
-  background: var(--fondo-std);
+  background: var(--fondo-menu);
+  color: white;
   padding-left: 50px;
 }
 
 .mostrar {
   margin-left: 0;
 }
+
 
 /* MEDIA QUERIES */
 
